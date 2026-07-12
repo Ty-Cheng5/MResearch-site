@@ -1,25 +1,57 @@
+/* Page wrapper: stacks all home sections vertically, centered */
 .page {
     display: flex;
-    /* Rows */
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Invisible spacer — content stays in the layout but isn't shown */
+.hide {
+    visibility: hidden;
 }
 
 .title {
     width: 100%;
+    height: 650px;
     align-self: stretch;
-    padding: 0 32px;
+    padding: 48px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     /* Intro Page "Research" */
 }
 
+/* Hero heading text styling */
 .title h1 {
-    font-size: 88px;
+    font-size: 120px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -1.76px;
     margin: 0;
-    text-align: center;
+    text-align: start;
+    white-space: nowrap;
 }
 
+.title3 h1 {
+    text-align: end;
+}
+
+.title2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.title2 img {
+    height: 128px;
+    width: auto;
+    transform: scale(1.8);
+    position: relative;
+    z-index: 2;
+}
+
+/* "Read the latest" section wrapper */
 .recent {
     width: 100%;
     align-self: stretch;
@@ -27,7 +59,8 @@
     box-sizing: border-box;
 }
 
-.recent-title {
+/* Row layout: heading on the left, buttons on the right */
+.recent-header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,20 +68,23 @@
     gap: 32px;
 }
 
-.recent-title h2 {
+/* "Read the latest" heading text styling */
+.recent-header h2 {
     font-size: 48px;
     font-weight: 500;
     letter-spacing: -0.96px;
     margin: 0;
 }
 
-.recent-title > div:last-child {
+/* Button group container (holds the two pill links) */
+.recent-header > div:last-child {
     display: flex;
     flex-direction: row;
     gap: 16px;
 }
 
-.recent-title p {
+/* Pill-shaped buttons: "See more publications" / "See more blog posts" */
+.recent-header p {
     margin: 0;
     padding: 16px 24px;
     border-radius: 999px;
@@ -59,5 +95,40 @@
     cursor: pointer;
 }
 
+.recent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-count: 3;
+    column-gap: 700px;
+}
 
+.recent-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Scroll arrows: pill-shaped container with "<" / ">" */
+.recent-scroll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: fit-content;
+    background-color: #f5f5f7;
+    border-radius: 999px;
+    padding: 10px 24px;
+}
+
+.recent-scroll h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.recent-scroll h1:first-child {
+    color: #ccc;
+}
 
