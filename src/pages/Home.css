@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 40px;
 }
 
 /* Invisible spacer — content stays in the layout but isn't shown */
@@ -132,3 +133,41 @@
     color: #ccc;
 }
 
+.annual-report {
+    width: 100%;
+    align-self: stretch;
+    padding: 0 48px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.annual-report-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    gap: 12px;
+}
+
+.annual-report-text h1,
+.annual-report-text p {
+    margin: 0;
+}
+
+.annual-report-text p {
+    font-size: 20px;
+    color: gray;
+}
+
+.annual-report h1 {
+    font-size: 35px;
+}
+
+.annual-report iframe{
+    border-radius: 2%;
+}

@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar';
-import Picture from '../images/picture.png'
+import Picture from '../images/picture.png';
 import './Home.css';
 
 function Home() {
@@ -7,9 +7,11 @@ function Home() {
     <div>
       <Navbar />
       <div className ="page">
+
         <div className="hide">
           <h1>*</h1>
         </div>
+
         <div className="title">
           <div className="hide">
             <h1>*</h1>
@@ -56,9 +58,28 @@ function Home() {
           </div>
         </div>
 
-        <div className ="vader">
+        <div className="annual-report">
+          <div className="annual-report-text">
+            <h1>The Public University,<br/> Built for Research.</h1>
+            <p>At the University of Michigan,
+              we advance scientific progress by publishing hundreds of
+              papers each year to signify the change in technology
+              and overall the world itself.
 
+            </p>
+          </div>
+          <iframe width="1000" height="600" src="https://www.youtube.com/embed/MoftsbPdNss" title="video" frameBorder="0" allowFullScreen></iframe>
         </div>
+
+        <div className="r">
+          <h1>Y</h1>
+          <h1>Y</h1>
+          <h1>Y</h1>
+          <h1>Y</h1>
+        </div>
+
+
+
 
       </div>
 

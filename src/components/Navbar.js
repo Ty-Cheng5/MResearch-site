@@ -11,6 +11,7 @@ function Navbar() {
         <a href="/Resources">Resources</a>
         <a href="/Careers">Careers</a>
         <a href="/Blog">Blog</a>
+        <a href="/Newsletter">Newsletter</a>
         <a href="/About">About</a>
       </nav>
     </nav>

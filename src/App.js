@@ -5,6 +5,7 @@ import Resources from './pages/Resources';
 import Careers from './pages/Careers';
 import Blog from './pages/Blog';
 import About from './pages/About';
+import Newsletter from './pages/Newsletter';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/newsletter" element={<Newsletter />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
