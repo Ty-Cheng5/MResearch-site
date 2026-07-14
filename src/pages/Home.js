@@ -25,6 +25,26 @@ function Home() {
           </div>
         </div>
 
+        <div className="annual-report">
+          <div className="annual-report-text">
+            <h1>The Public University,<br/> Built for Research.</h1>
+            <p>At the University of Michigan,
+              we advance scientific progress by publishing hundreds of
+              papers each year to signify the change in technology
+              and overall the world itself.
+
+            </p>
+          </div>
+          <iframe width="1000" height="600"
+           src="https://www.youtube.com/embed/MoftsbPdNss"
+            title="video" frameBorder="0" allowFullScreen>
+          </iframe>
+        </div>
+
+        <div className="quote-board">
+          <h1>Quote Section</h1>
+        </div>
+
         <div className="recent">
           <div className="recent-header">
             <div>
@@ -37,19 +57,28 @@ function Home() {
           </div>
           <div className="recent-container">
             <div className="recent-card">
-              <h1>h</h1>
-              <h1>h</h1>
-              <h1>h</h1>
+              <iframe
+              src="https://www.youtube.com/embed/MoftsbPdNss"
+                title="video" frameBorder="0" allowFullScreen>
+              </iframe>
+              <p className="recent-card-meta">June 16 · Blog</p>
+              <h3>h</h3>
             </div>
             <div className="recent-card">
-              <h1>h</h1>
-              <h1>h</h1>
-              <h1>h</h1>
+              <iframe
+              src="https://www.youtube.com/embed/MoftsbPdNss"
+                title="video" frameBorder="0" allowFullScreen>
+              </iframe>
+              <p className="recent-card-meta">June 16 · Blog</p>
+              <h3>h</h3>
             </div>
             <div className="recent-card">
-              <h1>h</h1>
-              <h1>h</h1>
-              <h1>h</h1>
+              <iframe
+              src="https://www.youtube.com/embed/MoftsbPdNss"
+                title="video" frameBorder="0" allowFullScreen>
+              </iframe>
+              <p className="recent-card-meta">June 16 · Blog</p>
+              <h3>h</h3>
             </div>
           </div>
           <div className="recent-scroll">
@@ -58,25 +87,9 @@ function Home() {
           </div>
         </div>
 
-        <div className="annual-report">
-          <div className="annual-report-text">
-            <h1>The Public University,<br/> Built for Research.</h1>
-            <p>At the University of Michigan,
-              we advance scientific progress by publishing hundreds of
-              papers each year to signify the change in technology
-              and overall the world itself.
-
-            </p>
-          </div>
-          <iframe width="1000" height="600" src="https://www.youtube.com/embed/MoftsbPdNss" title="video" frameBorder="0" allowFullScreen></iframe>
-        </div>
-
-        <div className="r">
-          <h1>Y</h1>
-          <h1>Y</h1>
-          <h1>Y</h1>
-          <h1>Y</h1>
-        </div>
+        <h1>Featured Research</h1>
+        <h1>Featured Invention</h1>
+        <h1>Learn More</h1>
 
 
 
