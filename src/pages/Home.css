@@ -106,11 +106,15 @@
     gap: 32px;
 }
 
-.recent-card {
+.recent-card,
+.recent-card:visited,
+.recent-card:hover {
     display: flex;
     flex-direction: column;
     flex: 1;
     min-width: 0;
+    color: inherit;
+    text-decoration: none;
 }
 
 .recent-card iframe {
@@ -187,5 +191,12 @@
 }
 
 .annual-report iframe{
+    border-radius: 2%;
+}
+
+.recent-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 2%;
 }

@@ -1,5 +1,8 @@
 import Navbar from '../components/Navbar';
 import Picture from '../images/picture.png';
+import latO from '../images/latest-one.png';
+import latN from '../images/latest-two.png';
+import latE from '../images/latest-three.jpg';
 import './Home.css';
 
 function Home() {
@@ -56,30 +59,27 @@ function Home() {
             </div>
           </div>
           <div className="recent-container">
-            <div className="recent-card">
-              <iframe
-              src="https://www.youtube.com/embed/MoftsbPdNss"
-                title="video" frameBorder="0" allowFullScreen>
-              </iframe>
-              <p className="recent-card-meta">June 16 · Blog</p>
-              <h3>h</h3>
-            </div>
-            <div className="recent-card">
-              <iframe
-              src="https://www.youtube.com/embed/MoftsbPdNss"
-                title="video" frameBorder="0" allowFullScreen>
-              </iframe>
-              <p className="recent-card-meta">June 16 · Blog</p>
-              <h3>h</h3>
-            </div>
-            <div className="recent-card">
-              <iframe
-              src="https://www.youtube.com/embed/MoftsbPdNss"
-                title="video" frameBorder="0" allowFullScreen>
-              </iframe>
-              <p className="recent-card-meta">June 16 · Blog</p>
-              <h3>h</h3>
-            </div>
+            <a 
+              href="https://cse.engin.umich.edu/stories/new-way-to-catch-errors-early-reduces-llm-debugging-time-from-days-to-minutes"
+              className="recent-card">
+              <img src={latO} alt=""></img>
+              <p className="recent-card-meta">June 19, 2026 · Blog</p>
+              <h3>New way to catch errors early reduces LLM debugging time from days to minutes</h3>
+            </a>
+            <a 
+              href="https://cse.engin.umich.edu/stories/u-m-researchers-receive-laude-moonshots-funding-for-ai-driven-glucose-management"
+              className="recent-card">
+              <img src={latN} alt=""></img>
+              <p className="recent-card-meta">May 14th, 2026 · Blog</p>
+              <h3>U-M researchers receive Laude Moonshots funding for AI-driven glucose management</h3>
+            </a>
+            <a 
+              href="https://mcity.umich.edu/shuttle/"
+              className="recent-card">
+              <img src={latE} alt=""></img>
+              <p className="recent-card-meta">December 2019 · Research</p>
+              <h3>Mcity Driverless Shuttle</h3>
+            </a>
           </div>
           <div className="recent-scroll">
             <h1>{'<'}</h1>
