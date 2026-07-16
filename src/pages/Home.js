@@ -88,7 +88,6 @@ function Home() {
         </div>
 
         <h1>Featured Research</h1>
-        <h1>Featured Invention</h1>
         <h1>Learn More</h1>
 
 

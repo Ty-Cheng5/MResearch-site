@@ -47,7 +47,6 @@
 .title2 img {
     height: 128px;
     width: auto;
-    transform: scale(1.8);
     position: relative;
     z-index: 2;
 }
