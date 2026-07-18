@@ -1,11 +1,15 @@
 import Navbar from '../components/Navbar';
-import Picture from '../images/picture.png';
 import latO from '../images/latest-one.png';
 import latN from '../images/latest-two.png';
 import latE from '../images/latest-three.jpg';
+import { useInView } from '../hooks/useInView';
 import './Home.css';
 
 function Home() {
+  const [annualReportRef, annualReportInView] = useInView();
+  const [quoteBoardRef, quoteBoardInView] = useInView();
+  const [recentRef, recentInView] = useInView();
+
   return (
     <div>
       <Navbar />
@@ -21,14 +25,16 @@ function Home() {
           </div>
           <div className="title2">
             <h1>Bigger Ideas,</h1>
-            <img src={Picture} alt=""></img>
           </div>
           <div className="title3">
             <h1>Backed by Scale</h1>
           </div>
         </div>
 
-        <div className="annual-report">
+        <div
+          className={`annual-report fade-in-section ${annualReportInView ? 'visible' : ''}`}
+          ref={annualReportRef}
+        >
           <div className="annual-report-text">
             <h1>The Public University,<br/> Built for Research.</h1>
             <p>At the University of Michigan,
@@ -44,11 +50,17 @@ function Home() {
           </iframe>
         </div>
 
-        <div className="quote-board">
+        <div
+          className={`quote-board fade-in-section ${quoteBoardInView ? 'visible' : ''}`}
+          ref={quoteBoardRef}
+        >
           <h1>Quote Section</h1>
         </div>
 
-        <div className="recent">
+        <div
+          className={`recent fade-in-section ${recentInView ? 'visible' : ''}`}
+          ref={recentRef}
+        >
           <div className="recent-header">
             <div>
               <h2>Read the latest</h2>
@@ -80,10 +92,6 @@ function Home() {
               <p className="recent-card-meta">December 2019 · Research</p>
               <h3>Mcity Driverless Shuttle</h3>
             </a>
-          </div>
-          <div className="recent-scroll">
-            <h1>{'<'}</h1>
-            <h1>{'>'}</h1>
           </div>
         </div>
 

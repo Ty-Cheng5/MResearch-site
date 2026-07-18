@@ -140,27 +140,6 @@
     margin-top: 1%;
 }
 
-/* Scroll arrows: pill-shaped container with "<" / ">" */
-.recent-scroll {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    width: fit-content;
-    background-color: #f5f5f7;
-    border-radius: 999px;
-    padding: 10px 24px;
-}
-
-.recent-scroll h1 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer; 
-}
-
-
 .annual-report {
     width: 100%;
     align-self: stretch;
@@ -205,4 +184,42 @@
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 2%;
+}
+
+/* Scroll-in-view animation: toggled by the useInView hook in Home.js */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(48px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*ALL KEYFRAME STUFF*/
+
+@keyframes fadeInTitle1 {
+    from {opacity: 0;}
+    to {opactity: 1;}
+}
+
+@keyframes fadeInTitle2 {
+  from { opacity: 0; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(24px); }
+}
+
+@keyframes fadeInTitle3 {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.title2 h1 {
+  animation: fadeInTitle2 2.5s ease-out forwards;
+}
+
+.title3 h1 {
+  animation: fadeInTitle3 3s ease-out 2s both;
 }
